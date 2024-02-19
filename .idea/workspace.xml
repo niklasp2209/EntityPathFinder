@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="842551d1-9d0d-4c88-b60c-c4bc076b2b92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/bukkitnews/pathfinder/PathFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/bukkitnews/pathfinder/command/PetCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/bukkitnews/pathfinder/entity/CustomPet_Zombie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/bukkitnews/pathfinder/resource/plugin.yml" afterDir="false" />
+    <list default="true" id="842551d1-9d0d-4c88-b60c-c4bc076b2b92" name="Changes" comment="Created Project">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/bukkitnews/pathfinder/entity/CustomPet_Sheep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/bukkitnews/pathfinder/entity/CustomPet_Wolf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/bukkitnews/pathfinder/entity/PetConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/bukkitnews/pathfinder/listener/PlayerConnectionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bukkitnews/pathfinder/PathFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bukkitnews/pathfinder/PathFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bukkitnews/pathfinder/command/PetCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bukkitnews/pathfinder/command/PetCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bukkitnews/pathfinder/entity/CustomPet_Zombie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bukkitnews/pathfinder/entity/CustomPet_Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bukkitnews/pathfinder/resource/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +37,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.EntityPathFinder [install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -67,11 +66,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708354824078</updated>
-      <workItem from="1708354825489" duration="1980000" />
+      <workItem from="1708354825489" duration="5468000" />
     </task>
+    <task id="LOCAL-00001" summary="Created Project">
+      <option name="closed" value="true" />
+      <created>1708356955627</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708356955627</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Project" />
   </component>
 </project>

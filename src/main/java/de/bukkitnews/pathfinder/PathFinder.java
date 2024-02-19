@@ -1,26 +1,44 @@
 package de.bukkitnews.pathfinder;
 
 import de.bukkitnews.pathfinder.command.PetCommand;
-import de.bukkitnews.pathfinder.entity.CustomPet_Zombie;
+import de.bukkitnews.pathfinder.listener.PlayerConnectionListener;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
 
 public class PathFinder extends JavaPlugin {
 
-    private CustomPet_Zombie customPetZombie;
+    private FileConfiguration petConfig;
+    private final Map<UUID, Object> petMap = new HashMap<>();
 
     @Override
-    public void onEnable(){
-        this.customPetZombie = new CustomPet_Zombie(this);
+    public void onEnable() {
+        // Register commands
+        getCommand("pet").setExecutor(new PetCommand(this));
 
-        initCommands();
+        // Register event listeners
+        getServer().getPluginManager().registerEvents(new PlayerConnectionListener(this), this);
+
+        // Load or create the pet configuration file
+        petConfig = getConfig();
+        petConfig.options().copyDefaults(true);
+        saveConfig();
     }
 
     @Override
-    public void onDisable(){
-
+    public void onDisable() {
+        // Save the pet configuration file
+        saveConfig();
     }
 
-    private void initCommands(){
-        this.getCommand("pet").setExecutor(new PetCommand(this));
+    public FileConfiguration getPetConfig() {
+        return petConfig;
+    }
+
+    public Map<UUID, Object> getPetMap() {
+        return petMap;
     }
 }
