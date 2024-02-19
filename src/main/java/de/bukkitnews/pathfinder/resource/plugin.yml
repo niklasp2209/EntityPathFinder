@@ -1,0 +1,8 @@
+name: "EntityPathFinder"
+author: BukkitNews
+version: "1.0"
+main: de.bukkitnews.pathfinder.PathFinder
+api-version: "1.20"
+commands:
+  pet:
+    description: Pet-Command
